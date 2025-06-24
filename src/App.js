@@ -327,7 +327,7 @@ const App = ({ ...props }) => {
   const getReserves = async () => {
     console.log(currentDate);
     await fetch(
-      `http://localhost:8080/https://molot.papillon.ru/rty/wht/reserv/get.php?dates=[${getFormatDate(
+      `https://cors-anywhere.herokuapp.com/https://molot.papillon.ru/rty/wht/reserv/get.php?dates=[${getFormatDate(
         currentDate
       )}]&box=1`,
       {
@@ -426,7 +426,7 @@ const App = ({ ...props }) => {
 
     // console.log("Форм дата: " + JSON.stringify(formData))
     return await fetch(
-      "http://localhost:8080/https://rider74.ru/rty/api74.php?put=1",
+      "https://cors-anywhere.herokuapp.com/https://rider74.ru/rty/api74.php?put=1",
       {
         method: "POST", // Указываем метод POST
         // headers: {
@@ -445,7 +445,7 @@ const App = ({ ...props }) => {
     };
 
     await fetch(
-      `http://localhost:8080/https://molot.papillon.ru/rty/wht/reserv/set.php?box=1`,
+      `https://cors-anywhere.herokuapp.com/https://molot.papillon.ru/rty/wht/reserv/set.php?box=1`,
       {
         method: "POST",
         headers: {
@@ -461,7 +461,7 @@ const App = ({ ...props }) => {
 
   const addReserve = async (reserve) => {
     await fetch(
-      `http://localhost:8080/https://molot.papillon.ru/rty/wht/reserv/set.php?box=1`,
+      `https://cors-anywhere.herokuapp.com/https://molot.papillon.ru/rty/wht/reserv/set.php?box=1`,
       {
         method: "POST",
         headers: {
