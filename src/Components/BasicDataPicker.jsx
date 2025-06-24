@@ -10,7 +10,7 @@ const BasicDatePicker = ({getCurDate, currentDate, ...props}) => {
             style={{ width: "max-content"}}
             label="Введите дату"
             format="DD.MM.YYYY"
-            /*defaultValue={dayjs(Date.now())}*sss/
+            /*defaultValue={dayjs(Date.now())}*/
             onChange={getCurDate}
             value={currentDate}
           />
